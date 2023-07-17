@@ -55,7 +55,7 @@ plt.show()
 
  
 
- 
+
 # Drop the outliers
 for col in num_col:
     # if col == 'Loan_Amount_Term': break
@@ -78,7 +78,7 @@ for col in num_col:
 
 
 
-
+df = df.apply(LabelEncoder().fit_transform)
 # def data2vector(data):
 #     names = data.columns[:]
 #     for i in names:
